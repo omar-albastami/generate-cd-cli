@@ -47,8 +47,7 @@ const main = async () => {
         // Track which services have parameters
         const servicesWithParameters = [];
 
-        resources.forEach((resource, i) => {
-            // if (i != 0) return;
+        resources.forEach((resource) => {
             // Generic info about service
             const displayName = resource.metadata.displayName;
             const serviceName = resource.entity.unique_id;
@@ -394,6 +393,7 @@ const processMainTestFile = (file, resources) => {
 
 const formatAsCamelCase = (word) => {
     let res = "";
+    // Split based on '-', '_', or any uppercase letters (ex: private_worker -> private, worker | ex: lifecyclePhase -> lifecycle, Phase)
     const words = word.split(/[_-]+|(?=[A-Z])+/);
     words.forEach((part) => {
         const lowercase = part.toLowerCase();
