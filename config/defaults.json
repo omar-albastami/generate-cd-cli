@@ -1,0 +1,12 @@
+{
+    "ALLOWED_PARAMETER_TYPES": ["string", "boolean", "password"],
+    "EXCLUDED_SERVICES": ["todolist", "environment", "cloudshell", "orion", "rationalteamconcert", "githubpublic", "github_integrated"],
+    "HARDCODED_SERVICE_PARAMETERS": {
+        "pagerduty": {
+            "key_type": "service"
+        },
+        "jira": {
+            "type": "existing"
+        }
+    }
+}

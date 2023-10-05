@@ -1,0 +1,16 @@
+{
+  "name": "generate-cd-cli",
+  "version": "1.0.0",
+  "description": "Generate Continuous Delivery CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Omar Al Bastami <omar.albastami@ibm.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "lodash": "^4.17.21",
+    "nconf": "^0.12.0"
+  }
+}
